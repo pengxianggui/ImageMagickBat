@@ -9,3 +9,7 @@ of couse, squash.bat is prepare for window.
 
 the squash.sh is prepare for linux. and it needn't depends on ImageMagick-7.0.8* folder.
 
+# Sample
+```bash
+find ./ -regex '.*\(jpg\|JPG\|png\|jpeg\)' -exec convert -resize 600x800 {} {} \; #处理当前文件中所有指定图片文件, 全部压缩至600*800像素
+```
